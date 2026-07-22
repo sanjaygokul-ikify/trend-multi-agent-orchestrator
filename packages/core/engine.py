@@ -26,6 +26,7 @@ class Engine:
             self.logger.error("Invalid agent")
             raise InvalidAgentError("Invalid agent")
         agent.tasks.append(task)
+        self.tasks.append(task)  # Add task to the tasks list
         self.logger.info(f"Task {task.id} assigned to agent {agent.id}")
 
     def execute_task(self, task: Task, agent: Agent) -> None:
