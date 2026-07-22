@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "multi-agent-orchestrator"
+description = "A distributed framework for orchestrating multiple agents"
+version = "0.1.0"
+authors = ["Your Name <your@email.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
